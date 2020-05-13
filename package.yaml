@@ -1,0 +1,48 @@
+name:                RegExMatcher
+version:             0.1.0.0
+github:              "cristirusu-99/RegExMatcher"
+license:             BSD3
+author:              "Rusu Cristi"
+maintainer:          "cristi.rusu@info.uaic.ro"
+copyright:           "2020 Rusu Cristi"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/cristirusu-99/RegExMatcher#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+
+library:
+  source-dirs: src
+
+executables:
+  RegExMatcher-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - RegExMatcher
+
+tests:
+  RegExMatcher-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - RegExMatcher

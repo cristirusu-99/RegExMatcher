@@ -1,0 +1,63 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: d6bab2b8b87a88e2a9b7af8340cc1e96daebec2f923cec89a4b1c4a28ee19fe2
+
+name:           RegExMatcher
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/cristirusu-99/RegExMatcher#readme>
+homepage:       https://github.com/cristirusu-99/RegExMatcher#readme
+bug-reports:    https://github.com/cristirusu-99/RegExMatcher/issues
+author:         Rusu Cristi
+maintainer:     cristi.rusu@info.uaic.ro
+copyright:      2020 Rusu Cristi
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/cristirusu-99/RegExMatcher
+
+library
+  exposed-modules:
+      Lib
+      Regex
+  other-modules:
+      Paths_RegExMatcher
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+  default-language: Haskell2010
+
+executable RegExMatcher-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_RegExMatcher
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      RegExMatcher
+    , base >=4.7 && <5
+  default-language: Haskell2010
+
+test-suite RegExMatcher-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_RegExMatcher
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      RegExMatcher
+    , base >=4.7 && <5
+  default-language: Haskell2010
