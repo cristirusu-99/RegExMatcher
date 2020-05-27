@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: d6bab2b8b87a88e2a9b7af8340cc1e96daebec2f923cec89a4b1c4a28ee19fe2
+-- hash: f734492d62ffa6e73d1618aa3efd309ddfcadaa6a476040ed303f9ccc3978112
 
 name:           RegExMatcher
 version:        0.1.0.0
@@ -28,6 +28,7 @@ source-repository head
 library
   exposed-modules:
       Lib
+      Parser
       Regex
   other-modules:
       Paths_RegExMatcher
