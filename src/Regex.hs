@@ -1,4 +1,4 @@
-module Regex(RegEx, (<+>), (<.>), many, catString, checkStr, emptyExp) where
+module Regex(RegEx, (<+>), (<.>), many, catString, checkStr, emptyExp, derivRE) where
 
 --Tip de date ce implementeaza o expresie regulata
 data RegEx = Phi                --Limbajul vid
