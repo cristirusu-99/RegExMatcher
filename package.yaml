@@ -1,8 +1,8 @@
 name:                RegExMatcher
 version:             0.1.0.0
 github:              "cristirusu-99/RegExMatcher"
-license:             BSD3
-author:              "Rusu Cristi"
+license:             -
+author:              "Rusu Cristi-Constantin"
 maintainer:          "cristi.rusu@info.uaic.ro"
 copyright:           "2020 Rusu Cristi"
 
